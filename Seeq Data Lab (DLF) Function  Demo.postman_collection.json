@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "4ef34e6d-34fa-4ce3-87e8-b40d96ce661e",
+		"name": "Seeq Data Lab (DLF) Function  Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15506828"
+	},
+	"item": [
+		{
+			"name": "Seeq Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true,
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.seeq.v1+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.seeq.v1+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"authProviderClass\": \"Auth\",\r\n  \"authProviderId\": \"Seeq\",\r\n  \"code\": \"string\",\r\n  \"password\": \"lz3kfyZ1eFXraQYRDicDG0UMk6xh5L\",\r\n  \"state\": \"string\",\r\n  \"username\": \"qntsMhi6SDGV7IV4RUIYxQ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://baba:34216/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"baba"
+					],
+					"port": "34216",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DLF Do Work",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-sq-auth",
+						"value": "Wc2jqemRn4YGFSHcGG_-9A",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://baba:34216/data-lab/0EEED7D2-6874-EC00-8FE0-9DF63CBA19F4/functions/notebooks/data_lab_function_demo/endpoints/dlf_do_work?x_val=JET-x&y_val=JET-y",
+					"protocol": "http",
+					"host": [
+						"baba"
+					],
+					"port": "34216",
+					"path": [
+						"data-lab",
+						"0EEED7D2-6874-EC00-8FE0-9DF63CBA19F4",
+						"functions",
+						"notebooks",
+						"data_lab_function_demo",
+						"endpoints",
+						"dlf_do_work"
+					],
+					"query": [
+						{
+							"key": "x_val",
+							"value": "JET-x"
+						},
+						{
+							"key": "y_val",
+							"value": "JET-y"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DLF Get Results",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-sq-auth",
+						"value": "Wc2jqemRn4YGFSHcGG_-9A",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://baba:34216/data-lab/0EEED7D2-6874-EC00-8FE0-9DF63CBA19F4/functions/notebooks/data_lab_function_demo/endpoints/get_work_result",
+					"protocol": "http",
+					"host": [
+						"baba"
+					],
+					"port": "34216",
+					"path": [
+						"data-lab",
+						"0EEED7D2-6874-EC00-8FE0-9DF63CBA19F4",
+						"functions",
+						"notebooks",
+						"data_lab_function_demo",
+						"endpoints",
+						"get_work_result"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
