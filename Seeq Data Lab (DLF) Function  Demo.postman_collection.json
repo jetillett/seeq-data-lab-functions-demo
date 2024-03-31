@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "4ef34e6d-34fa-4ce3-87e8-b40d96ce661e",
+		"_postman_id": "39841326-3aa3-4b74-8da9-9b5c1ef0fedb",
 		"name": "Seeq Data Lab (DLF) Function  Demo",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "15506828"
@@ -70,12 +70,12 @@
 					},
 					{
 						"key": "x-sq-auth",
-						"value": "Wc2jqemRn4YGFSHcGG_-9A",
+						"value": "T36T1kqsqP78cPHcdim1Ig",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://baba:34216/data-lab/0EEED7D2-6874-EC00-8FE0-9DF63CBA19F4/functions/notebooks/data_lab_function_demo/endpoints/dlf_do_work?x_val=JET-x&y_val=JET-y",
+					"raw": "http://baba:34216/data-lab/0EEC1794-2464-E890-A7F5-05BB05E6FBAE/functions/notebooks/seeq-data-lab-functions-demo/data_lab_function_demo/endpoints/do_work?x_val=JET-x&y_val=JET-y",
 					"protocol": "http",
 					"host": [
 						"baba"
@@ -83,12 +83,13 @@
 					"port": "34216",
 					"path": [
 						"data-lab",
-						"0EEED7D2-6874-EC00-8FE0-9DF63CBA19F4",
+						"0EEC1794-2464-E890-A7F5-05BB05E6FBAE",
 						"functions",
 						"notebooks",
+						"seeq-data-lab-functions-demo",
 						"data_lab_function_demo",
 						"endpoints",
-						"dlf_do_work"
+						"do_work"
 					],
 					"query": [
 						{
@@ -121,12 +122,12 @@
 					},
 					{
 						"key": "x-sq-auth",
-						"value": "Wc2jqemRn4YGFSHcGG_-9A",
+						"value": "T36T1kqsqP78cPHcdim1Ig",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://baba:34216/data-lab/0EEED7D2-6874-EC00-8FE0-9DF63CBA19F4/functions/notebooks/data_lab_function_demo/endpoints/get_work_result",
+					"raw": "http://baba:34216/data-lab/0EEC1794-2464-E890-A7F5-05BB05E6FBAE/functions/notebooks/seeq-data-lab-functions-demo/data_lab_function_demo/endpoints/get_work_result",
 					"protocol": "http",
 					"host": [
 						"baba"
@@ -134,9 +135,10 @@
 					"port": "34216",
 					"path": [
 						"data-lab",
-						"0EEED7D2-6874-EC00-8FE0-9DF63CBA19F4",
+						"0EEC1794-2464-E890-A7F5-05BB05E6FBAE",
 						"functions",
 						"notebooks",
+						"seeq-data-lab-functions-demo",
 						"data_lab_function_demo",
 						"endpoints",
 						"get_work_result"
