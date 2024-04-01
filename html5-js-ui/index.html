@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <h1>Seeq Data Lab Functions Example</h1>
+  <p>Welcome to an example of calling a Seeq Data Lab Function (DLF) from HTML5 and JavaScript.
+    It is not fancy but hopefully covers the concepts.<br>
+  </p>
+  <p>
+    The following buttons support DLF demo.  The 'Seeq Login' button must be clicked first to log into
+    Seeq and then the others to 'Do SDL Work' and 'Get Work' can be called after.  <br><br>
+    For more detail on this demo see: <a href="https://endeng.atlassian.net/wiki/spaces/EEIKB/pages/2338914339/Seeq+Data+Lab+Functions+Example">
+    Go to Seeq Data Lab Functions Example</a>
+  </p>
+  <p>Click to log into Seeq</p>
+  <button onclick="seeqLogin()">Seeq Login</button>
+  <p> Using the DLF API click to tell Seeq Data Lab to do the work of retrieving a DataFrame from a
+  search for Example signals.</p>
+  <button onclick="doWork()">Do SDL Work</button>
+  <p> Click to retrieve current DLF work output.  Note: If DLF has not been run yet then work output
+  will indicate no results yet.</p>
+  <button onclick="getWork()">Get Work</button>
+  <p> Perform complete login->work->results on one action.</p>
+  <button onclick="oneClickAll()">All In One Click</button>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
